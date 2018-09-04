@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Hero } from "../hero";
 import { HeroService } from "../hero.service";
 
@@ -9,12 +10,7 @@ import { HeroService } from "../hero.service";
 })
 export class SuperheroesComponent implements OnInit {
   // Ultimately program is still defining a class that operates like an html element
-  selectedHero: Hero;
   allHeroes: Hero[];
-
-  onSelect(hero:Hero): void {
-    this.selectedHero = hero;
-  }
 
   constructor(private heroService: HeroService) { }
 

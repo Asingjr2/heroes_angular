@@ -3,6 +3,11 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-superheroes></app-superheroes>
+  <nav>
+      <a routerLink="/superheroes">SuperHeroes</a>
+      <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+  <!-- Router must be added to handle navigation within app-->
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 
